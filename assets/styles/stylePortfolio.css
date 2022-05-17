@@ -1,0 +1,28 @@
+html {
+  font-family: arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #E5E7E9;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
+}
+
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10em;
+  line-height: 1.5em;
+  color: #96b3c2;
+  margin-top: 0px;
+  text-shadow: 1px 1px 1px #bfcacf, 1px 2px 1px #bfcacf, 1px 3px 1px #bfcacf, 1px 4px 1px #bfcacf, 1px 5px 1px #bfcacf, 1px 6px 1px #bfcacf, 1px 7px 1px #bfcacf, 1px 8px 1px #bfcacf, 1px 9px 1px #bfcacf, 1px 10px 1px #bfcacf;
+}
+/*# sourceMappingURL=stylePortfolio.css.map */
