@@ -8,7 +8,29 @@ html {
     margin:0;    
   }
   
+  .button{
+    background-color:#8a9ba7;       
+    padding: 15px 32px;
+    text-align: center;        
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+    a{
+    text-decoration: none;
+     color: white;
+    }
 
+    &:hover{
+        background-color: #d7e2ea;
+        color: #000000;
+        transform: scale(1.1);
+        transition: transform 200ms;
+        font-weight: 200;
+    }
+}
   
   nav {
     width: 100%;
@@ -43,9 +65,8 @@ html {
     background-image: url("../images/fond_header.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    color: white;
-    
-    border: 1px solid #000000;
+    color: white;    
+    border: 1px solid white;
 
     h1 {
         padding-left: 10%;
@@ -178,6 +199,9 @@ html {
     height: 500px;
     background-color:#ffffff ;
     margin: 0 auto;
+
+
+
 }
 
 .realisations{
@@ -217,26 +241,9 @@ html {
         }
     }
 
-    .button{
-        background-color:#8a9ba7 ;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;        
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-
-        &:hover{
-            background-color: #d7e2ea;
-            color: #000000;
-            transform: scale(1.1);
-            transition: transform 200ms;
-            font-weight: 200;
-        }
-    }
+    
 }
+
 
 
 

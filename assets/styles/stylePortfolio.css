@@ -4,13 +4,39 @@ html {
 
 body {
   margin: 0px;
+  font-size: 15px;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: #aeaeaf59;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: fixed;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  color: #96b3c2;
+  line-height: 50px;
+  margin: 0 15px;
+  font-weight: 550;
+}
+
+nav img {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 header {
   background-color: #E5E7E9;
   margin: auto;
   width: 100%;
-  height: 300px;
+  height: 350px;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
 }
@@ -20,9 +46,75 @@ header h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 10em;
-  line-height: 1.5em;
+  line-height: 2em;
   color: #96b3c2;
-  margin-top: 0px;
+  margin: 0;
   text-shadow: 1px 1px 1px #bfcacf, 1px 2px 1px #bfcacf, 1px 3px 1px #bfcacf, 1px 4px 1px #bfcacf, 1px 5px 1px #bfcacf, 1px 6px 1px #bfcacf, 1px 7px 1px #bfcacf, 1px 8px 1px #bfcacf, 1px 9px 1px #bfcacf, 1px 10px 1px #bfcacf;
+}
+
+.portfolio {
+  width: 100%;
+  height: 1000px;
+}
+
+.portfolioBox {
+  margin: 50px auto;
+  width: 60%;
+  border: 1px solid #bfcacf;
+  height: 500px;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 10px #bfcacf;
+          box-shadow: 5px 5px 10px #bfcacf;
+  background-image: url(../images/fond_header.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolioBox__text {
+  width: 90%;
+  height: 500px;
+  color: #d7e2ea;
+  font-size: 2.2em;
+  text-align: center;
+  line-height: 370px;
+}
+
+.portfolioBox__arrow {
+  border-radius: 0px 25px 25px 0px;
+  background-color: #d7e2ea;
+  opacity: 50%;
+  border: 1px solid #d7e2ea;
+}
+
+.portfolioBox__arrow img {
+  margin-top: 50%;
+}
+
+.portfolioBox__arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #E5E7E9;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=stylePortfolio.css.map */

@@ -10,16 +10,49 @@ html {
 
 body{
     margin:0px;
+    font-size: 15px;
 
 }
 
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #aeaeaf59;   
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    position: fixed;
+    z-index: 2;
+    
+    
+   
+    a{
+        text-decoration: none;
+        display: inline-block;
+        color: #96b3c2;
+        line-height: 50px;
+        margin: 0 15px;
+        font-weight: 550;
+        
+    }
+
+    img {
+        width: 1.5em;
+        height: 1.5em;
+        
+        
+        
+    }
+}
 
 header{
   
     background-color: #E5E7E9;
     margin: auto;
     width: 100%;
-    height: 300px;
+    height: 350px;
+   
     
     clip-path: 
     polygon(
@@ -36,9 +69,10 @@ header{
         text-align: center;
         text-transform: uppercase;
         font-size: 10em;
-        line-height: 1.5em;
+        line-height: 2em;
         color: $colorprimary;
-        margin-top: 0px;
+        margin: 0;
+        
 
         text-shadow: 1px 1px 1px $colorshadow,
         1px 2px 1px $colorshadow,
@@ -52,5 +86,81 @@ header{
         1px 10px 1px $colorshadow,
  
     }
+
+  
 }
 
+.portfolio{
+    width: 100%;
+    height: 1000px;
+
+}
+
+
+
+.portfolioBox{
+    margin: 50px auto;
+    width: 60%;
+    border: 1px solid $colorshadow;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px $colorshadow;
+    background-image: url(../images/fond_header.jpg);
+    display:flex;
+
+
+    
+
+    &__text{
+        width: 90%;
+        height: 500px;
+        color: $colorsecondary;
+        font-size: 2.2em;
+        text-align: center;
+        line-height: 370px;             
+        
+    }
+
+
+    &__arrow{       
+        border-radius: 0px 25px 25px 0px;
+        background-color: $colorsecondary;
+        opacity: 50%;
+        border: 1px solid $colorsecondary;
+       
+        
+   
+        
+        img{
+            
+            margin-top: 50%;
+           
+           
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 200ms;
+                
+            }
+        }
+       
+}
+}
+
+
+footer{
+    width:100%;
+    height: 150px;
+    background-color: #E5E7E9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    p{
+        
+        position: absolute;
+        bottom: 0;
+        
+        
+    }
+    
+    }

@@ -7,6 +7,34 @@ body {
   margin: 0;
 }
 
+.button {
+  background-color: #8a9ba7;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: #d7e2ea;
+  color: #000000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  font-weight: 200;
+}
+
 nav {
   width: 100%;
   height: auto;
@@ -38,7 +66,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   color: white;
-  border: 1px solid #000000;
+  border: 1px solid white;
 }
 
 header h1 {
@@ -206,30 +234,6 @@ header .arrow_down img:hover {
   font-size: 0.8em;
   text-align: justify;
   padding: 30px;
-}
-
-.realisations .button {
-  background-color: #8a9ba7;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.realisations .button:hover {
-  background-color: #d7e2ea;
-  color: #000000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
-  transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
-  font-weight: 200;
 }
 
 .contact {
