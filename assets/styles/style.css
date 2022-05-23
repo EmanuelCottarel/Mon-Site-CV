@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 body h1 {
@@ -230,15 +231,15 @@ header .arrow_down img:hover {
   font-size: 1em;
   background-color: #ffffff;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  -webkit-box-shadow: 3px 3px 10px #d3d3d3;
+          box-shadow: 3px 3px 10px #d3d3d3;
   text-align: left;
   padding: 15px;
 }
 
 .parcours .parcoursBox__text {
   padding-left: 50px;
-  border-left: 3px solid grey;
+  border-left: 3px solid #808080;
   font-size: 0.9em;
 }
 
@@ -263,8 +264,8 @@ header .arrow_down img:hover {
   font-size: 1.2em;
   background-color: #ffffff;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  -webkit-box-shadow: 3px 3px 10px #d3d3d3;
+          box-shadow: 3px 3px 10px #d3d3d3;
 }
 
 .realisations .projetBox__photo img {
@@ -329,8 +330,8 @@ header .arrow_down img:hover {
   width: 30%;
   height: 200px;
   border-radius: 1.8em;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  -webkit-box-shadow: 3px 3px 10px #d3d3d3;
+          box-shadow: 3px 3px 10px #d3d3d3;
   background-color: #8a9ba7;
 }
 
@@ -343,8 +344,8 @@ header .arrow_down img:hover {
   width: 30%;
   height: 200px;
   border-radius: 1.8em;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  -webkit-box-shadow: 3px 3px 10px #d3d3d3;
+          box-shadow: 3px 3px 10px #d3d3d3;
   background-color: #96b3c2;
 }
 
@@ -358,8 +359,8 @@ header .arrow_down img:hover {
   width: 30%;
   height: 200px;
   border-radius: 1.8em;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  -webkit-box-shadow: 3px 3px 10px #d3d3d3;
+          box-shadow: 3px 3px 10px #d3d3d3;
   background-color: #d7e2ea;
 }
 

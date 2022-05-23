@@ -1,3 +1,9 @@
+$colorshadow:#d3d3d3;
+$colortitle:#96b3c2;
+$colorprimary:#E5E7E9;
+$colorsecondary:#ffffff;
+
+
 html {
     font-size: 15px;
     font-family: arial, sans-serif;
@@ -5,10 +11,11 @@ html {
   }
 
   body{
-    margin:0;   
+    margin:0; 
+    width: 100%; 
     
     h1{
-        color: #96b3c2;
+        color: $colortitle;
     }
   }
   
@@ -52,7 +59,7 @@ html {
     a{
         text-decoration: none;
         display: inline-block;
-        color: #96b3c2;
+        color: $colortitle;
         line-height: 50px;
         margin: 0 15px;
         font-weight: 550;
@@ -62,6 +69,7 @@ html {
     img {
         width: 1.5em;
         height: 1.5em;
+        
         
     }
 }
@@ -84,15 +92,13 @@ header {
     }
 
     h2 {
-        padding-left: 10%;
-        
+        padding-left: 10%;        
         font-size: 3em;
         
     }
 
     p {
-        padding-left: 10%;
-        
+        padding-left: 10%;        
         font-size: 2em;
     }
     
@@ -121,8 +127,7 @@ header {
         &__photo {
             
             img {
-                height:500px;
-               
+                height:500px;               
             }
         }
 
@@ -226,14 +231,14 @@ header {
         font-size: 1em;
         background-color: #ffffff; 
         border-radius: 25px; 
-        box-shadow: 3px 3px 10px lightgrey;
+        box-shadow: 3px 3px 10px $colorshadow;
         text-align: left;
         padding: 15px;
     }
 
     .parcoursBox__text{
         padding-left: 50px;
-        border-left: 3px solid grey;
+        border-left: 3px solid #808080;
         font-size: 0.9em;
     }
 
@@ -261,7 +266,7 @@ header {
         font-size: 1.2em;
         background-color: #ffffff; 
         border-radius: 25px; 
-        box-shadow: 3px 3px 10px lightgrey;
+        box-shadow: 3px 3px 10px $colorshadow;
        
         
 
@@ -332,7 +337,7 @@ header {
     width:30%;
     height: 200px;        
     border-radius: 1.8em;
-    box-shadow: 3px 3px 10px lightgrey;
+    box-shadow: 3px 3px 10px $colorshadow;
     
 }
 
@@ -356,7 +361,7 @@ header {
 
     &__mail{
         @include contactbox();        
-        background-color: #96b3c2;
+        background-color: $colortitle;
                        
           img{
             margin-top: 20px;
