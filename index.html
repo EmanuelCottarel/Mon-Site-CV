@@ -13,11 +13,11 @@
                 <nav>
                 
                         <a href="#"><img src="./assets/images/icone_accueil.png" alt="Accueil" /></a>
-                        <a href="#">A propos</a>
-                        <a href="#">Compétences</a>
-                        <a href="#">Parcours</a>
+                        <a href="#aboutme">A propos</a>
+                        <a href="#competences">Compétences</a>
+                        <a href="#parcours">Parcours</a>
                         <a href="./pages/portfolio.html">Portfolio</a>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                    
 
                 </nav>
@@ -29,12 +29,12 @@
 
 
                 <div class="arrow_down">
-                    <a href="#"><img src="./assets/images/fleche_down.png" class="Fleche vers le bas" /></a>
+                    <a href="#aboutme"><img src="./assets/images/fleche_down.png" class="Fleche vers le bas" /></a>
                 </div>
 
             </header>
 
-            <div class="aboutme">
+            <div class="aboutme" id="aboutme">
                 <div class="aboutme__photo">
                     <img src="./assets/images/profilpicture.jpg" alt="Ma Photo">
                     <p>
@@ -47,52 +47,97 @@
                 <div class="aboutme__text">
                     <h1>A propos de moi</h1>
                     <p>Developpeur Web en devenir, je suis à la recherche d'une formation et d'une alternance sur Montpellier pour la rentrée de Septembre 2022.</p>
-                        <p>Après avoir validé une licence de Sciences de la Vie et de la Terre à l'Université d'Avignon j'ai décidé de me réorienter vers la programmation et le developpement Web et mobile. Passionné d'informatique depuis toujours, j'ai eu l'opportunité d'appréhender le developpement web lors de mon année de Terminale scientifique grace à la spécialisation en Informatique et Sciences du Numérique qui m'a permi d'apprendre les bases du HTML, CSS et Javascript. </p>
-                        <p>Après plusieurs mois d'auto-formation, réaliser une alternance dans le developpement Web me permettrait de faire un premier pas dans le monde professionnel de la tech. 
+                        <p>Après avoir validé une licence de Sciences de la Vie et de la Terre à l'Université d'Avignon j'ai décidé de me réorienter vers la programmation et le developpement Web et mobile. Passionné d'informatique depuis toujours, j'ai pu découvrir le developpement web lors de mon année de Terminale scientifique grace à la spécialisation en Informatique et Sciences du Numérique qui m'a permi d'apprendre les bases du HTML, CSS et Javascript. </p>
+                        <p>Après plusieurs mois d'auto-formation, réaliser une alternance dans le developpement Web me permettrait de faire un premier pas dans le monde professionnel du developpement Web et mobile. 
                         
                          </p>
 
                 </div>
             </div>
 
-            <div class="competences">
+            <div class="competences" id="competences">
                 <h1>Compétences</h1>
                 
                 <div class="competences__boxleft">
                     <div class="competence__box">
                         <h2>Frontend</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tenetur itaque sapiente qui quas quisquam eos at ratione soluta incidunt in, fuga aliquam maxime ipsa et doloribus aspernatur modi quo.</p>
+                        <p>
+                            <strong>HTML / CSS / SASS:</strong> Intégration de site Web, réalisation d'animations simple en CSS
+                            <br />
+                            <strong>Javascript: </strong> Utilisation simple du Javascript pour réaliser des animations
+                        </p>
                     </div>
                     <div class="competence__img"><img src="./assets/images/frontend.png" alt="logo frontend"></div>
                 </div>
 
                 <div class="competences__boxright">                    
                     <div class="competence__img"><img src="./assets/images/backend.png" alt="logo backend"></div>
-                    <div class="competence__box"></div>
+                    <div class="competence__box">
+                        <h2>Backend</h2>
+                        <p>
+                            <strong>PHP / MYSQL: </strong> Creation et utilisation de base de données
+                        </p>
+                    </div>
                 </div>
 
                 <div class="competences__boxleft">
                     <div class="competence__box">
-                        <h2>Langues</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tenetur itaque sapiente qui quas quisquam eos at ratione soluta incidunt in, fuga aliquam maxime ipsa et doloribus aspernatur modi quo.</p>
+                        <h2>Informatique / Design</h2>
+                        <p>
+                            <strong>Versioning: </strong> Git <br />
+                            <strong>Montage vidéo:</strong> Premiere Pro, After effect <br />
+                            <strong>Design:</strong> Photoshop, Illustrator, Canva <br />
+                            <strong>Photographie:</strong> Lightroom <br />
+                        </p>
                     </div>
-                    <div class="competence__img"><img src="./assets/images/langue.png" alt="logo frontend"></div>
+                    <div class="competence__img"><img src="./assets/images/montage.png" alt="clap cinéma"></div>
                 </div>
 
                 <div class="competences__boxright">                    
-                    <div class="competence__img"><img src="./assets/images/backend.png" alt="logo frontend"></div>
-                    <div class="competence__box"></div>
+                    <div class="competence__img"><img src="./assets/images/langue.png" alt="logo Langues"></div>
+                    <div class="competence__box">
+                        <h2>Langues</h2>
+                            <p><strong>Français:</strong> Langue maternelle <br />
+                                <strong>Anglais:</strong> Niveau C1 - capable de tenir une conversation aisément <br />
+                                <strong>Italien:</strong> Niveau B1 - discussion simple
+                            </p>
+                    </div>
                 </div>
                 
             </div>
 
-            <div class="parcours">
+            <div class="parcours" id="parcours">
                 <h1>Mon parcours</h1>
-                <form>
+                <h2>Ma formation</h2>
+                    <div class="parcoursBox">
+                        <div class="parcoursBox__text">
+                            <p><strong>2022 - 2023</strong> Formation Developpeur Web en Alternance</p>
+                        </div>
+                        <div class="parcoursBox__text">
+                            <p><strong>2017 - 2020</strong> Licence Sciences de la Vie et de la Terre <br /><em></em> Parcours Biologie Santé Environnement - Mention Assez Bien</em></p>
+                        </div>
+                        <div class="parcoursBox__text">
+                            <p><strong>2016 - 2017</strong> Licence 1 Langues Etrangères appliquées - Anglais Italien</p>
+                        </div>
+                    </div>
+                    
+                <h2>Mon expérience professionnelle</h2>
+                <div class="parcoursBox">
+                    <div class="parcoursBox__text">
+                        <p><strong>2021 - 2022</strong> La Fromagerie de Vedène - Associé fondateur <br /> <em>Vente en boutique, clôture de caisse, commandes auprès des fournisseurs,
+                            recherche de nouveaux produits, gestion des stocks, recrutement</em></p>
+                    </div>
+                    <div class="parcoursBox__text">
+                        <p><strong>2018 - 2022 </strong>Capitole Studios - Agent d'accueil polyvalent <br /> <em>Accueil clientèle, vente billetterie et confiserie, manutention, réception et
+                            contrôle des livraisons, formation des nouveaux agents, affichage, nettoyage
+                            des salles</em></p>
+                    </div>
+                   
+                </div>
                     
                     <button class="button" type="button"><a href="./assets/fichiers/CV_emanuel_cottarel.pdf">Télécharger mon CV</a></button>
                     
-                </form>
+                
             </div>
 
             <div class="realisations">
@@ -102,7 +147,8 @@
                     <div class="projetBox__photo"><img src="./assets/images/ProjetSiteCV.JPG" alt=""></div>
                     <div class="projetBox__text">
                         <h2>Mon site CV</h2> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem ipsa numquam voluptatum eaque omnis et nam, nisi mollitia cupiditate, eligendi magnam suscipit dicta, odit ea nihil error quos ad.</p>
+                        <h3>HTML</h3><h3>CSS/SCSS</h3>
+                        <p>Site internet présentant mon CV et mon portfolio. C'est ma première création partagée sur Internet. J'ai essentiellement utilisé du HTML et SCSS</p>
                     </div>
                 </div>
 
@@ -110,8 +156,9 @@
                     
                     <div class="projetBox__photo"><img src="./assets/images/ecologieEnFrance.gif" alt=""></div>
                     <div class="projetBox__text">
-                        <h2>L'écologie en France - En cours</h2> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem ipsa numquam voluptatum eaque omnis et nam, nisi mollitia cupiditate, eligendi magnam suscipit dicta, odit ea nihil error quos ad.</p>
+                        <h2>E-cology - En cours</h2> 
+                        <h3>HTML</h3><h3>CSS/SCSS</h3><h3>PHP/MySQL</h3><h3>Javascript</h3>
+                        <p>Carte interactive résumant les principales informations sur divers thème de l'écologie comme l'énergie, le climat, l'environnement en France. Les informations sont basées sur le rapport du GIEC. La carte met en évidence les problèmes de notre époque et propose des solutions</p>
                     </div>
                 </div>
 
@@ -123,7 +170,7 @@
             </div>
            
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h1>Contactez moi!</h1>
                 
                 <div class="contactbox">

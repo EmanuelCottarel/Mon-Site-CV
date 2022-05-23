@@ -53,51 +53,103 @@ header h1 {
 }
 
 .portfolio {
+  text-align: center;
+  font-size: 1.5em;
   width: 100%;
-  height: 1000px;
+  height: auto;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
 }
 
-.portfolioBox {
+.portfolio .portfolioBox {
+  width: 70%;
+  height: auto;
   margin: 50px auto;
-  width: 60%;
-  border: 1px solid #bfcacf;
-  height: 500px;
-  border-radius: 25px;
-  -webkit-box-shadow: 5px 5px 10px #bfcacf;
-          box-shadow: 5px 5px 10px #bfcacf;
-  background-image: url(../images/fond_header.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.2em;
+  background-color: #ffffff;
+  border-radius: 25px;
+  -webkit-box-shadow: 3px 3px 10px lightgrey;
+          box-shadow: 3px 3px 10px lightgrey;
+  padding: 30px;
 }
 
-.portfolioBox__text {
-  width: 90%;
-  height: 500px;
-  color: #d7e2ea;
-  font-size: 2.2em;
-  text-align: center;
-  line-height: 370px;
+.portfolio .portfolioBox__text {
+  font-size: 0.8em;
+  text-align: justify;
+  padding-left: 20px;
+  width: 80%;
 }
 
-.portfolioBox__arrow {
-  border-radius: 0px 25px 25px 0px;
+.portfolio .portfolioBox__text h2 {
+  line-height: 0em;
+  margin-bottom: 3px;
+}
+
+.portfolio .portfolioBox__text h3 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1em;
+  margin-right: 10px;
+  font-size: 0.8em;
+  margin-bottom: 1px;
   background-color: #d7e2ea;
-  opacity: 50%;
-  border: 1px solid #d7e2ea;
+  border: 1px solid #8a9ba7;
+  font-weight: 1;
+  color: #8a9ba7;
+  padding: 3px;
+  border-radius: 4px;
 }
 
-.portfolioBox__arrow img {
-  margin-top: 50%;
+.portfolio .portfolioBox__text p {
+  font-size: 0.9em;
 }
 
-.portfolioBox__arrow img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
-  transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
+.portfolio .container {
+  position: relative;
+  width: 50%;
+}
+
+.portfolio .container .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff40;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.portfolio .container:hover .overlay {
+  height: 100%;
+}
+
+.portfolio .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio .text img {
+  width: 80px;
 }
 
 footer {
