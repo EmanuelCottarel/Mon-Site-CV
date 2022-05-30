@@ -2,6 +2,7 @@ $colorshadow:#d3d3d3;
 $colortitle:#96b3c2;
 $colorprimary:#E5E7E9;
 $colorsecondary:#ffffff;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 html {
@@ -16,6 +17,7 @@ html {
     
     h1{
         color: $colortitle;
+        font-size: 2em;
     }
   }
   
@@ -140,142 +142,129 @@ header {
 
 
 /**COMPETENCES**/
-@mixin competencebox{
-    width: 800px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px lightgrey;
-    background-color: #ffffff;
-    margin-bottom: 50px;
-
-    h2{
-        font-size: 1.5em;
-        
-    }
-    
-}
-.competences{
-    text-align: center;    
+.competence{
     width:100%;
     height: auto;
-    background-color:#E5E7E9 ;
+    background-color: #E5E7E9;
+    text-align:center;
 
     h1{
         font-size: 3em;
-        line-height: 2em;
-    }
-
-    p{
-        text-align: left;
-        padding-left: 15px;
-        font-size: 1.1em;
-        line-height: 1.5em;
+        padding-top: 20px;
     }
     
-
-    &__boxleft{
+    
+    
+    &__box{
+     display: flex;    
+      margin-left:20%;
+      
+      
+      h2{
+        font-size:1.5em;
+      }
+      
+      
+    
+    
+      &--text{
+        width: 800px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px lightgrey;
+        background-color: #ffffff;
+        margin-bottom: 75px;
         
-        display:flex;
-        justify-content: flex-start;
-        margin-left: 10%;
-
-        .competence__box{
-            @include competencebox()
+        
+        p{
+          text-align:left;
+          padding-left:15px;
         }
-
+        
+      }
+    
+      &--image{
+        margin: 0 50px;
+        
+       
         img{
-            width: 150px;
-            margin-left: 80px;
-            
-
+        width:150px;
         }
+        
+      }
+      
     }
-
-    &__boxright{
-
-        display:flex;
-        justify-content: flex-end;
-        margin-right: 10%;
-
-        .competence__box{
-            @include competencebox()
-        }
-        img{
-            width: 150px;
-            margin-right: 80px;
-
-        }
-    }
-
-
-
+    
+    
    
-
-/** Indicateurs compétences circulaires **/
-
-.skills-wrapper{
-  display:flex;
-  justify-content: center;
-}
-
-.skill{
-  width:100px;
-  height:100px;
-  box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
-    -5px -5px -5px 20px rgba(0,0,0,0.3);
-  border-radius: 50%;
+    
+    /** Indicateurs compétences circulaires **/
   
-  position: relative;
-  display:grid; 
-  place-items: center;
+  .skills-wrapper{
+    display:flex;
+    justify-content: center;
+  }
   
-}
-
-.skill:not(:last-child){
-  margin-right: 3rem;
- 
-}
-
-.skill::before{
-  content:"";
-  position:absolute;
-  width:80%;
-  height:80%;
-  border-radius:50%;
+  .skill{
+    width:100px;
+    height:100px;
+    box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
+      -5px -5px -5px 20px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    
+    position: relative;
+    display:grid; 
+    place-items: center;
+    
+  }
   
-  background-color:#ffffff;
-  box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
-    -5px -5px -5px 20px rgba(0,0,0,0.3);
+  .skill:not(:last-child){
+    margin-right: 3rem;
+   
+  }
+  
+  .skill::before{
+    content:"";
+    position:absolute;
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    
+    background-color:#ffffff;
+    box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
+      -5px -5px -5px 20px rgba(0,0,0,0.3);
+      
+    
+  }
+  
+  .skill:nth-child(1){
+    background-image:conic-gradient(#96b3c2 70%,transparent 0);
+    color:#96b3c2;
+    
+  }
+  
+  .skill:nth-child(2){
+    background-image:conic-gradient(#8a9ba7 70%,transparent 0);
+    color:#8a9ba7;
+  }
+  
+  .skill:nth-child(3){
+      background-image:conic-gradient(#96b3c2 15%,transparent 0);
+      color:#96b3c2;
+    }
+
     
   
-}
-
-.skill:nth-child(1){
-  background-image:conic-gradient(#96b3c2 70%,transparent 0);
-  color:#96b3c2;
-  
-}
-
-.skill:nth-child(2){
-  background-image:conic-gradient(#8a9ba7 70%,transparent 0);
-  color:#8a9ba7;
-}
-
-.skill:nth-child(3){
-    background-image:conic-gradient(#96b3c2 15%,transparent 0);
-    color:#96b3c2;
+  .content {
+    font-size:15px;
+    z-index:1;
+    text-align:center;
+   
   }
-
-.content {
-  font-size:15px;
-  z-index:1;
-  text-align:center;
- 
-}
-.content span {
-  display:block;
-}
-}
+  .content span {
+    display:block;
+  }
+  }
 
 /** MON PARCOURS**/
 
@@ -472,3 +461,4 @@ footer{
     }
     
 }
+

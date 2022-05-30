@@ -13,6 +13,7 @@ body {
 
 body h1 {
   color: #96b3c2;
+  font-size: 2em;
 }
 
 .button {
@@ -132,85 +133,54 @@ header .arrow_down img:hover {
 }
 
 /**COMPETENCES**/
-.competences {
-  text-align: center;
+.competence {
   width: 100%;
   height: auto;
   background-color: #E5E7E9;
+  text-align: center;
   /** Indicateurs compétences circulaires **/
 }
 
-.competences h1 {
+.competence h1 {
   font-size: 3em;
-  line-height: 2em;
+  padding-top: 20px;
 }
 
-.competences p {
+.competence__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20%;
+}
+
+.competence__box h2 {
+  font-size: 1.5em;
+}
+
+.competence__box--text {
+  width: 800px;
+  height: auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px lightgrey;
+          box-shadow: 5px 5px 10px lightgrey;
+  background-color: #ffffff;
+  margin-bottom: 75px;
+}
+
+.competence__box--text p {
   text-align: left;
   padding-left: 15px;
-  font-size: 1.1em;
-  line-height: 1.5em;
 }
 
-.competences__boxleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 10%;
+.competence__box--image {
+  margin: 0 50px;
 }
 
-.competences__boxleft .competence__box {
-  width: 800px;
-  height: auto;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 10px lightgrey;
-          box-shadow: 5px 5px 10px lightgrey;
-  background-color: #ffffff;
-  margin-bottom: 50px;
-}
-
-.competences__boxleft .competence__box h2 {
-  font-size: 1.5em;
-}
-
-.competences__boxleft img {
+.competence__box--image img {
   width: 150px;
-  margin-left: 80px;
 }
 
-.competences__boxright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 10%;
-}
-
-.competences__boxright .competence__box {
-  width: 800px;
-  height: auto;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 10px lightgrey;
-          box-shadow: 5px 5px 10px lightgrey;
-  background-color: #ffffff;
-  margin-bottom: 50px;
-}
-
-.competences__boxright .competence__box h2 {
-  font-size: 1.5em;
-}
-
-.competences__boxright img {
-  width: 150px;
-  margin-right: 80px;
-}
-
-.competences .skills-wrapper {
+.competence .skills-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +189,7 @@ header .arrow_down img:hover {
           justify-content: center;
 }
 
-.competences .skill {
+.competence .skill {
   width: 100px;
   height: 100px;
   -webkit-box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
@@ -231,11 +201,11 @@ header .arrow_down img:hover {
   place-items: center;
 }
 
-.competences .skill:not(:last-child) {
+.competence .skill:not(:last-child) {
   margin-right: 3rem;
 }
 
-.competences .skill::before {
+.competence .skill::before {
   content: "";
   position: absolute;
   width: 80%;
@@ -246,28 +216,28 @@ header .arrow_down img:hover {
           box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.competences .skill:nth-child(1) {
+.competence .skill:nth-child(1) {
   background-image: conic-gradient(#96b3c2 70%, transparent 0);
   color: #96b3c2;
 }
 
-.competences .skill:nth-child(2) {
+.competence .skill:nth-child(2) {
   background-image: conic-gradient(#8a9ba7 70%, transparent 0);
   color: #8a9ba7;
 }
 
-.competences .skill:nth-child(3) {
+.competence .skill:nth-child(3) {
   background-image: conic-gradient(#96b3c2 15%, transparent 0);
   color: #96b3c2;
 }
 
-.competences .content {
+.competence .content {
   font-size: 15px;
   z-index: 1;
   text-align: center;
 }
 
-.competences .content span {
+.competence .content span {
   display: block;
 }
 

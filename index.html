@@ -10,18 +10,18 @@
 
     <body>
             
-                <nav>
+        <nav>
                 
-                        <a href="#"><img src="./assets/images/icone_accueil.png" alt="Accueil" /></a>
-                        <a href="#aboutme">A propos</a>
-                        <a href="#competences">Compétences</a>
-                        <a href="#parcours">Parcours</a>
-                        <a href="./pages/portfolio.html">Portfolio</a>
-                        <a href="#contact">Contact</a>
-                   
+                <a href="#"><img src="./assets/images/icone_accueil.png" alt="Accueil" /></a>
+                <a href="#aboutme">A propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#parcours">Parcours</a>
+                <a href="./pages/portfolio.html">Portfolio</a>
+                <a href="#contact">Contact</a>                   
 
-                </nav>
-            <header>             
+        </nav>
+
+        <header>             
                            
                 <h1>Emanuel Cottarel</h1>
                 <h2>Developpeur Web</h2>
@@ -32,9 +32,9 @@
                     <a href="#aboutme"><img src="./assets/images/fleche_down.png" class="Fleche vers le bas" /></a>
                 </div>
 
-            </header>
+        </header>
 
-            <div class="aboutme" id="aboutme">
+        <div class="aboutme" id="aboutme">
                 <div class="aboutme__photo">
                     <img src="./assets/images/Profilpicture.png" alt="Ma Photo">
                     <p>
@@ -53,54 +53,59 @@
                          </p>
 
                 </div>
-            </div>
+        </div>
 
-            <div class="competences" id="competences">
+        <div class="competence" id="competences">
                 <h1>Compétences</h1>
-                
-                <div class="competences__boxleft">
-                    <div class="competence__box">
+  
+                <div class="competence__box">
+                    <div class="competence__box--text"> 
                         <h2>Frontend</h2>
-
-                        <div class="skills-wrapper">
-                            <div class ="skill">
-                              <div class="content">
-                                <span>70%</span><span>HTML</span>
-                              </div>
-                            </div>
-                            <div class ="skill">
-                              <div class="content">
-                                <span>70%</span><span>CSS</span>
-                              </div>
-                            </div>
-                            <div class ="skill">
+      
+                            <div class="skills-wrapper">
+                                <div class ="skill">
                                 <div class="content">
-                                  <span>15%</span><span>JS</span>
+                                    <span>70%</span><span>HTML</span>
                                 </div>
-                              </div>
+                                </div>
+                                <div class ="skill">
+                                <div class="content">
+                                    <span>70%</span><span>CSS</span>
+                                </div>
+                                </div>
+                                <div class ="skill">
+                                    <div class="content">
+                                    <span>15%</span><span>JS</span>
+                                    </div>
+                                </div>
                           </div>
-
-                        <p>
-                            <strong>HTML / CSS / SASS:</strong> Intégration de site Web, réalisation d'animations simple en CSS
-                            <br />
-                            <strong>Javascript: </strong> Utilisation simple du Javascript pour réaliser des animations
-                        </p>
+      
+                            <p>
+                                <strong>HTML / CSS / SASS:</strong> Intégration de site Web, réalisation d'animations simple en CSS
+                                <br />
+                                <strong>Javascript: </strong> Utilisation simple du Javascript pour réaliser des animations
+                            </p>
                     </div>
-                    <div class="competence__img"><img src="./assets/images/frontend.png" alt="logo frontend"></div>
-                </div>
 
-                <div class="competences__boxright">                    
-                    <div class="competence__img"><img src="./assets/images/backend.png" alt="logo backend"></div>
-                    <div class="competence__box">
+                    <div class="competence__box--image">
+                         <img src="./assets/images/frontend.png" alt="logo frontend">
+                    </div>
+                </div>
+    
+                <div class="competence__box">
+                    <div class="competence__box--image">
+                        <img src="./assets/images/backend.png" alt="logo backend">
+                    </div>
+
+                    <div class="competence__box--text"> 
                         <h2>Backend</h2>
-                        <p>
-                            <strong>PHP / MYSQL: </strong> Creation et utilisation de base de données
-                        </p>
+                        <p> <strong>PHP / MYSQL: </strong> Creation et utilisation de base de données</p>
                     </div>
+      
                 </div>
-
-                <div class="competences__boxleft">
-                    <div class="competence__box">
+  
+                <div class="competence__box">
+                    <div class="competence__box--text"> 
                         <h2>Informatique / Design</h2>
                         <p>
                             <strong>Versioning: </strong> Git <br />
@@ -109,38 +114,48 @@
                             <strong>Photographie:</strong> Lightroom <br />
                         </p>
                     </div>
-                    <div class="competence__img"><img src="./assets/images/montage.png" alt="clap cinéma"></div>
+                    <div class="competence__box--image">
+                        <img src="./assets/images/montage.png" alt="clap cinéma">
+                    </div>
                 </div>
-
-                <div class="competences__boxright">                    
-                    <div class="competence__img"><img src="./assets/images/langue.png" alt="logo Langues"></div>
-                    <div class="competence__box">
-                        <h2>Langues</h2>
-                            <p><strong>Français:</strong> Langue maternelle <br />
+  
+  
+                <div class="competence__box">
+                    <div class="competence__box--image">
+                        <img src="./assets/images/langue.png" alt="logo Langues">
+                    </div>
+                        <div class="competence__box--text"> 
+                            <h2>Langues</h2>
+                                <p>
+                                <strong>Français:</strong> Langue maternelle <br />
                                 <strong>Anglais:</strong> Niveau C1 - capable de tenir une conversation aisément <br />
                                 <strong>Italien:</strong> Niveau B1 - discussion simple
-                            </p>
+                                </p>
+                        </div>      
+                </div>
+  
+    </div>
+  
+                
+                
+                    
+
+        <div class="parcours" id="parcours">
+            <h1>Mon parcours</h1>
+            <h2>Ma formation</h2>
+                <div class="parcoursBox">
+                    <div class="parcoursBox__text">
+                        <p><strong>2022 - 2023</strong> Formation Developpeur Web en Alternance</p>
+                    </div>
+                    <div class="parcoursBox__text">
+                        <p><strong>2017 - 2020</strong> Licence Sciences de la Vie et de la Terre <br /><em></em> Parcours Biologie Santé Environnement - Mention Assez Bien</em></p>
+                    </div>
+                    <div class="parcoursBox__text">
+                        <p><strong>2016 - 2017</strong> Licence 1 Langues Etrangères appliquées - Anglais Italien</p>
                     </div>
                 </div>
-                
-            </div>
-
-            <div class="parcours" id="parcours">
-                <h1>Mon parcours</h1>
-                <h2>Ma formation</h2>
-                    <div class="parcoursBox">
-                        <div class="parcoursBox__text">
-                            <p><strong>2022 - 2023</strong> Formation Developpeur Web en Alternance</p>
-                        </div>
-                        <div class="parcoursBox__text">
-                            <p><strong>2017 - 2020</strong> Licence Sciences de la Vie et de la Terre <br /><em></em> Parcours Biologie Santé Environnement - Mention Assez Bien</em></p>
-                        </div>
-                        <div class="parcoursBox__text">
-                            <p><strong>2016 - 2017</strong> Licence 1 Langues Etrangères appliquées - Anglais Italien</p>
-                        </div>
-                    </div>
                     
-                <h2>Mon expérience professionnelle</h2>
+            <h2>Mon expérience professionnelle</h2>
                 <div class="parcoursBox">
                     <div class="parcoursBox__text">
                         <p><strong>2021 - 2022</strong> La Fromagerie de Vedène - Associé fondateur <br /> <em>Vente en boutique, clôture de caisse, commandes auprès des fournisseurs,
