@@ -1,6 +1,8 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 html {
   font-size: 15px;
-  font-family: arial, sans-serif;
+  font-family: Poppins, arial, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -135,6 +137,7 @@ header .arrow_down img:hover {
   width: 100%;
   height: auto;
   background-color: #E5E7E9;
+  /** Indicateurs compétences circulaires **/
 }
 
 .competences h1 {
@@ -145,7 +148,7 @@ header .arrow_down img:hover {
 .competences p {
   text-align: left;
   padding-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 
@@ -161,7 +164,7 @@ header .arrow_down img:hover {
 
 .competences__boxleft .competence__box {
   width: 800px;
-  height: 200px;
+  height: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px lightgrey;
           box-shadow: 5px 5px 10px lightgrey;
@@ -190,7 +193,7 @@ header .arrow_down img:hover {
 
 .competences__boxright .competence__box {
   width: 800px;
-  height: 200px;
+  height: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px lightgrey;
           box-shadow: 5px 5px 10px lightgrey;
@@ -205,6 +208,67 @@ header .arrow_down img:hover {
 .competences__boxright img {
   width: 150px;
   margin-right: 80px;
+}
+
+.competences .skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.competences .skill {
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.competences .skill:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.competences .skill::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5ps 20px rgba(0, 0, 0, 0.3), -5px -5px -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.competences .skill:nth-child(1) {
+  background-image: conic-gradient(#96b3c2 70%, transparent 0);
+  color: #96b3c2;
+}
+
+.competences .skill:nth-child(2) {
+  background-image: conic-gradient(#8a9ba7 70%, transparent 0);
+  color: #8a9ba7;
+}
+
+.competences .skill:nth-child(3) {
+  background-image: conic-gradient(#96b3c2 15%, transparent 0);
+  color: #96b3c2;
+}
+
+.competences .content {
+  font-size: 15px;
+  z-index: 1;
+  text-align: center;
+}
+
+.competences .content span {
+  display: block;
 }
 
 /** MON PARCOURS**/

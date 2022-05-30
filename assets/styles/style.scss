@@ -2,11 +2,11 @@ $colorshadow:#d3d3d3;
 $colortitle:#96b3c2;
 $colorprimary:#E5E7E9;
 $colorsecondary:#ffffff;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 html {
     font-size: 15px;
-    font-family: arial, sans-serif;
+    font-family: Poppins, arial, sans-serif;
     scroll-behavior: smooth;
   }
 
@@ -142,7 +142,7 @@ header {
 /**COMPETENCES**/
 @mixin competencebox{
     width: 800px;
-    height: 200px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 10px lightgrey;
     background-color: #ffffff;
@@ -168,7 +168,7 @@ header {
     p{
         text-align: left;
         padding-left: 15px;
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.5em;
     }
     
@@ -207,6 +207,74 @@ header {
         }
     }
 
+
+
+   
+
+/** Indicateurs compétences circulaires **/
+
+.skills-wrapper{
+  display:flex;
+  justify-content: center;
+}
+
+.skill{
+  width:100px;
+  height:100px;
+  box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
+    -5px -5px -5px 20px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  
+  position: relative;
+  display:grid; 
+  place-items: center;
+  
+}
+
+.skill:not(:last-child){
+  margin-right: 3rem;
+ 
+}
+
+.skill::before{
+  content:"";
+  position:absolute;
+  width:80%;
+  height:80%;
+  border-radius:50%;
+  
+  background-color:#ffffff;
+  box-shadow: 5px 5ps 20px rgba(0,0,0,0.3),
+    -5px -5px -5px 20px rgba(0,0,0,0.3);
+    
+  
+}
+
+.skill:nth-child(1){
+  background-image:conic-gradient(#96b3c2 70%,transparent 0);
+  color:#96b3c2;
+  
+}
+
+.skill:nth-child(2){
+  background-image:conic-gradient(#8a9ba7 70%,transparent 0);
+  color:#8a9ba7;
+}
+
+.skill:nth-child(3){
+    background-image:conic-gradient(#96b3c2 15%,transparent 0);
+    color:#96b3c2;
+  }
+
+.content {
+  font-size:15px;
+  z-index:1;
+  text-align:center;
+ 
+}
+.content span {
+  display:block;
+}
 }
 
 /** MON PARCOURS**/
