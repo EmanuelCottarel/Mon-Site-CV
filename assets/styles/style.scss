@@ -30,6 +30,7 @@ html {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    margin-bottom: 25px;
     
     a{
     text-decoration: none;
@@ -156,8 +157,8 @@ header {
     
     
     &__box{
-     display: flex;    
-      margin-left:20%;
+        display: flex;    
+        margin-left:20%;
       
       
       h2{
@@ -168,12 +169,13 @@ header {
     
     
       &--text{
-        width: 800px;
+        width: 850px;
         height: auto;
         border-radius: 20px;
         box-shadow: 5px 5px 10px lightgrey;
         background-color: #ffffff;
         margin-bottom: 75px;
+        font-size: 1.1em;
         
         
         p{
@@ -313,7 +315,7 @@ header {
     height: auto;
     background-color:#E5E7E9;   
     overflow: hidden;
-    padding: 20px;
+   
 
     .projetBox{
         width: 70%;

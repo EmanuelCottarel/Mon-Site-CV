@@ -2,8 +2,10 @@ $colorprimary: #96b3c2;
 $colorsecondary: #d7e2ea;
 $colorshadow: #d3d3d3;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
 html {
-    font-family: arial, sans-serif;
+    font-family: Poppins, arial, sans-serif;
     
   }
 
@@ -139,6 +141,11 @@ header{
 
             p{
                 font-size: 0.9em;
+            }
+
+            img{
+                width: 40px;
+                margin-left: 15px;
             }
         }
               

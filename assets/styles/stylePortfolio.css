@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 html {
-  font-family: arial, sans-serif;
+  font-family: Poppins, arial, sans-serif;
 }
 
 body {
@@ -107,6 +108,11 @@ header h1 {
 
 .portfolio .portfolioBox__text p {
   font-size: 0.9em;
+}
+
+.portfolio .portfolioBox__text img {
+  width: 40px;
+  margin-left: 15px;
 }
 
 .portfolio .container {
