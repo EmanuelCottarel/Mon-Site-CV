@@ -6,7 +6,7 @@ $colorsecondary:#ffffff;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 html {
-    font-size: 15px;
+    font-size: 16px;
     font-family: Poppins, arial, sans-serif;
     scroll-behavior: smooth;
   }
@@ -17,12 +17,12 @@ html {
     
     h1{
         color: $colortitle;
-        font-size: 2em;
+        font-size: 2rem;
     }
   }
   
   .button{
-    background-color:#8a9ba7;       
+    background-color:#AAF0D1;       
     padding: 15px 32px;
     text-align: center;        
     display: inline-block;
@@ -57,6 +57,7 @@ html {
     text-transform: uppercase;
     font-size: 1em;
     position: fixed;
+    z-index: 100;
     
    
     a{
@@ -65,7 +66,7 @@ html {
         color: $colortitle;
         line-height: 50px;
         margin: 0 15px;
-        font-weight: 550;
+        font-weight: 500;
         
     }
 
@@ -75,14 +76,22 @@ html {
         
         
     }
+
+    label{
+        display: none;
+        
+    }
+    label, #toggle{
+        display: none;
+    }
 }
   
 
 header {
-    width: 100%;
-    height: 900px;
+    max-width: 100%;
+    height: auto;
     background-image: url("../images/fond_header.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;    
     border: 1px solid white;
@@ -90,13 +99,13 @@ header {
     h1 {
         padding-left: 10%;
         padding-top: 20%;
-        font-size: 5em;
+        font-size: 5rem;
         line-height: 0.5em;
     }
 
     h2 {
         padding-left: 10%;        
-        font-size: 3em;
+        font-size: 3rem;
         
     }
 
@@ -148,6 +157,7 @@ header {
     height: auto;
     background-color: #E5E7E9;
     text-align:center;
+    
 
     h1{
         font-size: 3em;
@@ -158,7 +168,10 @@ header {
     
     &__box{
         display: flex;    
-        margin-left:20%;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        
       
       
       h2{
@@ -169,7 +182,7 @@ header {
     
     
       &--text{
-        width: 850px;
+        width: 70%;
         height: auto;
         border-radius: 20px;
         box-shadow: 5px 5px 10px lightgrey;
@@ -278,6 +291,10 @@ header {
     background-color:#ffffff;
     margin-bottom: 25px;
 
+    h1{
+        font-size: 3rem;
+    }
+
    
     
 
@@ -316,6 +333,9 @@ header {
     background-color:#E5E7E9;   
     overflow: hidden;
    
+    h1{
+        font-size: 3rem;
+    }
 
     .projetBox{
         width: 70%;
@@ -326,15 +346,19 @@ header {
         background-color: #ffffff; 
         border-radius: 25px; 
         box-shadow: 3px 3px 10px $colorshadow;
+        overflow: hidden;
        
         
 
 
         &__photo{
            
+            width:40%;
+
             img{
-            width: 500px;
-            padding: 30px;  
+                padding: 5%;
+                 width: 100%;
+             
               
              }
 
@@ -343,9 +367,11 @@ header {
 
         }
         &__text{
+            width:60%;
             font-size: 0.8em;
             text-align: justify;
-            padding: 30px;
+            padding-left: 4%;
+           
 
             h2{
                 line-height: 0em;
@@ -380,23 +406,28 @@ header {
 /** CONTACTEZ MOI**/
 
 .contact{
-    width: 70%;
-    height: 600px;
-    margin: 0 auto;
+    width: 80%;
+    height: 37.5rem;
+    margin: auto;
+    
     text-align: center;
     font-size: 1.5em;
-        h1{
-            line-height: 2em;;
+       
+    h1{
+            line-height: 2em;
+            font-size: 3rem;
+
         }
     
 }
 
 
 @mixin contactbox {
-    width:30%;
-    height: 200px;        
+    width:100%;
+    height: auto;        
     border-radius: 1.8em;
     box-shadow: 3px 3px 10px $colorshadow;
+    margin: 1%;
     
 }
 
@@ -464,3 +495,343 @@ footer{
     
 }
 
+
+
+@mixin navBurger {
+    background-color: #8a9ba799;
+
+        .mainPages{
+            display: none;
+            flex-direction: column;
+            background-color:#8a9ba799;
+            height: auto;
+            text-align: center;
+
+            a{
+                width:50%;
+                margin: auto;
+                font-size: 1.5rem;
+                color: #ffffff;
+                font-weight: bold;
+
+                
+            }
+        }
+ 
+        label 
+        {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #toggle:checked + .mainPages {
+            display: flex;
+        }
+    }
+
+
+
+/**Smartphone**/
+
+@media only screen and (max-width:480px){
+    html{
+        font-size: 12px;
+    }
+
+    nav{
+        @include navBurger();
+        }
+        
+        
+
+    header h1{
+        line-height: 1em;
+    }
+    
+    .aboutme{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+
+        &__photo{
+            width:100%;
+            height: auto;
+            }
+
+           
+
+        &__text{
+            margin:auto;
+            width:90%;
+        }
+    }
+
+.competence{
+  
+    img{
+        display: none;
+        
+    }
+
+    &__box{
+        width: 90%;
+        margin: auto;
+        margin-bottom: -3rem;
+        flex-direction: column;
+        
+        &--text{
+            width: 100%;
+           
+            
+        }
+    }
+}
+
+.realisations{
+
+    .projetBox{
+        width: 90%;
+        flex-direction: column;
+        
+        
+
+            &__photo{
+                
+                margin: auto;
+                width: 90%;
+                padding-top: 5%;
+                img{
+                    padding: 0%;
+                }
+               
+            }
+
+            &__text{
+                padding: 0%;
+                width:90%;
+                margin: auto;
+                
+            }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+.contactbox{
+    margin: auto;
+    margin-bottom: 10%;
+    flex-direction: column;
+    width: 90%;
+    
+   
+}
+
+}
+
+/**Tablette**/
+
+@media only screen and (min-width: 481px) and  (max-width:1024px){
+    html{
+        font-size: 12px;
+    }
+
+    nav{
+        
+        @include navBurger();
+    }
+
+    header h1{
+        line-height: 1em;
+    }
+    
+    .aboutme{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+
+
+        &__photo{
+            width:100%;
+            height: auto;
+            
+            }
+
+           
+
+        &__text{
+            margin:auto;
+            width:90%;
+        }
+    }
+
+.competence{
+  
+    img{
+        display: none;
+        
+    }
+
+    &__box{
+        width: 90%;
+        margin: auto;
+        margin-bottom: -3rem;
+        flex-direction: column;
+        
+        &--text{
+            width: 100%;
+           
+            
+        }
+    }
+}
+
+.realisations{
+
+    .projetBox{
+        width: 90%;
+        flex-direction: column;
+        
+        
+
+            &__photo{
+                
+                margin: auto;
+                width: 90%;
+                padding-top: 5%;
+                img{
+                    padding: 0%;
+                }
+               
+            }
+
+            &__text{
+                padding: 0%;
+                width:90%;
+                margin: auto;
+                
+            }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+.contactbox{
+    margin: auto;
+    margin-bottom: 10%;
+    flex-direction: column;
+    width: 90%;
+    
+   
+}
+
+}
+
+
+/**Laptop**/
+
+@media only screen and (min-width:1025px) and (max-width:1600px){
+    html{
+        font-size: 16px;
+    }
+
+   
+
+    header h1{
+        line-height: 1em;
+    }
+    
+    .aboutme{
+        height: auto;
+        display: flex;
+        
+        width: 90%;
+        color: green;
+
+
+        &__photo{
+            width:100%;
+            height: auto;
+            }
+
+           
+
+        &__text{
+            margin:auto;
+            width:90%;
+        }
+    }
+
+.competence{
+  
+   
+
+    &__box{
+        width: 90%;
+        margin: auto;
+        
+        
+        
+        &--text{
+            width: 100%;
+           
+            
+        }
+    }
+}
+
+.realisations{
+
+    .projetBox{
+        width: 90%;
+        padding: 3%;
+               
+
+            &__photo{
+                
+                margin: auto;
+                width: 90%;
+                
+
+                img{
+                    padding: 0%;
+                }
+               
+            }
+
+            &__text{
+                padding-left: 3%;
+                width:90%;
+                margin: auto;
+                
+            }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+.contactbox{
+    margin: auto;
+    margin-bottom: 10%;
+    flex-direction: column;
+    width: 30%;
+    
+   
+}
+
+}

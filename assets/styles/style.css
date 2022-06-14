@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 html {
-  font-size: 15px;
+  font-size: 16px;
   font-family: Poppins, arial, sans-serif;
   scroll-behavior: smooth;
 }
@@ -13,11 +13,11 @@ body {
 
 body h1 {
   color: #96b3c2;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .button {
-  background-color: #8a9ba7;
+  background-color: #AAF0D1;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
@@ -54,6 +54,7 @@ nav {
   text-transform: uppercase;
   font-size: 1em;
   position: fixed;
+  z-index: 100;
 }
 
 nav a {
@@ -62,7 +63,7 @@ nav a {
   color: #96b3c2;
   line-height: 50px;
   margin: 0 15px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 nav img {
@@ -70,11 +71,19 @@ nav img {
   height: 1.5em;
 }
 
+nav label {
+  display: none;
+}
+
+nav label, nav #toggle {
+  display: none;
+}
+
 header {
-  width: 100%;
-  height: 900px;
+  max-width: 100%;
+  height: auto;
   background-image: url("../images/fond_header.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   border: 1px solid white;
@@ -83,13 +92,13 @@ header {
 header h1 {
   padding-left: 10%;
   padding-top: 20%;
-  font-size: 5em;
+  font-size: 5rem;
   line-height: 0.5em;
 }
 
 header h2 {
   padding-left: 10%;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 header p {
@@ -151,7 +160,11 @@ header .arrow_down img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 80%;
 }
 
 .competence__box h2 {
@@ -159,7 +172,7 @@ header .arrow_down img:hover {
 }
 
 .competence__box--text {
-  width: 850px;
+  width: 70%;
   height: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px lightgrey;
@@ -253,6 +266,10 @@ header .arrow_down img:hover {
   margin-bottom: 25px;
 }
 
+.parcours h1 {
+  font-size: 3rem;
+}
+
 .parcours .parcoursBox {
   width: 70%;
   height: auto;
@@ -289,6 +306,10 @@ header .arrow_down img:hover {
   overflow: hidden;
 }
 
+.realisations h1 {
+  font-size: 3rem;
+}
+
 .realisations .projetBox {
   width: 70%;
   height: auto;
@@ -301,17 +322,23 @@ header .arrow_down img:hover {
   border-radius: 25px;
   -webkit-box-shadow: 3px 3px 10px #d3d3d3;
           box-shadow: 3px 3px 10px #d3d3d3;
+  overflow: hidden;
+}
+
+.realisations .projetBox__photo {
+  width: 40%;
 }
 
 .realisations .projetBox__photo img {
-  width: 500px;
-  padding: 30px;
+  padding: 5%;
+  width: 100%;
 }
 
 .realisations .projetBox__text {
+  width: 60%;
   font-size: 0.8em;
   text-align: justify;
-  padding: 30px;
+  padding-left: 4%;
 }
 
 .realisations .projetBox__text h2 {
@@ -341,15 +368,16 @@ header .arrow_down img:hover {
 
 /** CONTACTEZ MOI**/
 .contact {
-  width: 70%;
-  height: 600px;
-  margin: 0 auto;
+  width: 80%;
+  height: 37.5rem;
+  margin: auto;
   text-align: center;
   font-size: 1.5em;
 }
 
 .contact h1 {
   line-height: 2em;
+  font-size: 3rem;
 }
 
 .contactbox {
@@ -362,11 +390,12 @@ header .arrow_down img:hover {
 }
 
 .contactbox__tel {
-  width: 30%;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 1.8em;
   -webkit-box-shadow: 3px 3px 10px #d3d3d3;
           box-shadow: 3px 3px 10px #d3d3d3;
+  margin: 1%;
   background-color: #8a9ba7;
 }
 
@@ -376,11 +405,12 @@ header .arrow_down img:hover {
 }
 
 .contactbox__mail {
-  width: 30%;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 1.8em;
   -webkit-box-shadow: 3px 3px 10px #d3d3d3;
           box-shadow: 3px 3px 10px #d3d3d3;
+  margin: 1%;
   background-color: #96b3c2;
 }
 
@@ -391,11 +421,12 @@ header .arrow_down img:hover {
 }
 
 .contactbox__social {
-  width: 30%;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 1.8em;
   -webkit-box-shadow: 3px 3px 10px #d3d3d3;
           box-shadow: 3px 3px 10px #d3d3d3;
+  margin: 1%;
   background-color: #d7e2ea;
 }
 
@@ -420,5 +451,304 @@ footer {
 footer p {
   position: absolute;
   bottom: 0;
+}
+
+/**Smartphone**/
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  nav {
+    background-color: #8a9ba799;
+  }
+  nav .mainPages {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #8a9ba799;
+    height: auto;
+    text-align: center;
+  }
+  nav .mainPages a {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  nav label {
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked + .mainPages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+  .aboutme {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .aboutme__photo {
+    width: 100%;
+    height: auto;
+  }
+  .aboutme__text {
+    margin: auto;
+    width: 90%;
+  }
+  .competence img {
+    display: none;
+  }
+  .competence__box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: -3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .competence__box--text {
+    width: 100%;
+  }
+  .realisations .projetBox {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .realisations .projetBox__photo {
+    margin: auto;
+    width: 90%;
+    padding-top: 5%;
+  }
+  .realisations .projetBox__photo img {
+    padding: 0%;
+  }
+  .realisations .projetBox__text {
+    padding: 0%;
+    width: 90%;
+    margin: auto;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+  .contactbox {
+    margin: auto;
+    margin-bottom: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+}
+
+/**Tablette**/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  nav {
+    background-color: #8a9ba799;
+  }
+  nav .mainPages {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #8a9ba799;
+    height: auto;
+    text-align: center;
+  }
+  nav .mainPages a {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  nav label {
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked + .mainPages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+  .aboutme {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  .aboutme__photo {
+    width: 100%;
+    height: auto;
+  }
+  .aboutme__text {
+    margin: auto;
+    width: 90%;
+  }
+  .competence img {
+    display: none;
+  }
+  .competence__box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: -3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .competence__box--text {
+    width: 100%;
+  }
+  .realisations .projetBox {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .realisations .projetBox__photo {
+    margin: auto;
+    width: 90%;
+    padding-top: 5%;
+  }
+  .realisations .projetBox__photo img {
+    padding: 0%;
+  }
+  .realisations .projetBox__text {
+    padding: 0%;
+    width: 90%;
+    margin: auto;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+  .contactbox {
+    margin: auto;
+    margin-bottom: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+}
+
+/**Laptop**/
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+  .aboutme {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    color: green;
+  }
+  .aboutme__photo {
+    width: 100%;
+    height: auto;
+  }
+  .aboutme__text {
+    margin: auto;
+    width: 90%;
+  }
+  .competence__box {
+    width: 90%;
+    margin: auto;
+  }
+  .competence__box--text {
+    width: 100%;
+  }
+  .realisations .projetBox {
+    width: 90%;
+    padding: 3%;
+  }
+  .realisations .projetBox__photo {
+    margin: auto;
+    width: 90%;
+  }
+  .realisations .projetBox__photo img {
+    padding: 0%;
+  }
+  .realisations .projetBox__text {
+    padding-left: 3%;
+    width: 90%;
+    margin: auto;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+  .contactbox {
+    margin: auto;
+    margin-bottom: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
