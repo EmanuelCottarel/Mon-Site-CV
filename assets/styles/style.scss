@@ -371,6 +371,7 @@ header {
             font-size: 0.8em;
             text-align: justify;
             padding-left: 4%;
+            padding-right: 2%;
            
 
             h2{
@@ -756,10 +757,9 @@ footer{
     
     .aboutme{
         height: auto;
-        display: flex;
-        
+        display: flex;        
         width: 90%;
-        color: green;
+        
 
 
         &__photo{

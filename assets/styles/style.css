@@ -339,6 +339,7 @@ header .arrow_down img:hover {
   font-size: 0.8em;
   text-align: justify;
   padding-left: 4%;
+  padding-right: 2%;
 }
 
 .realisations .projetBox__text h2 {
@@ -704,7 +705,6 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     width: 90%;
-    color: green;
   }
   .aboutme__photo {
     width: 100%;
