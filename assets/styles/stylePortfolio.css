@@ -11,26 +11,30 @@ body {
 nav {
   width: 100%;
   height: auto;
-  background-color: #aeaeaf59;
+  background-color: rgba(174, 174, 175, 0.3490196078);
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
-
 nav a {
   text-decoration: none;
   display: inline-block;
   color: #96b3c2;
   line-height: 50px;
   margin: 0 15px;
-  font-weight: 550;
+  font-weight: 500;
 }
-
 nav img {
   width: 1.5em;
   height: 1.5em;
+}
+nav label {
+  display: none;
+}
+nav label, nav #toggle {
+  display: none;
 }
 
 header {
@@ -41,9 +45,8 @@ header {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 0% 100%);
 }
-
 header h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 10em;
@@ -62,37 +65,28 @@ header h1 {
   overflow: hidden;
   padding: 20px;
 }
-
 .portfolio .portfolioBox {
   width: 70%;
   height: auto;
   margin: 50px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 1.2em;
   background-color: #ffffff;
   border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 10px lightgrey;
-          box-shadow: 3px 3px 10px lightgrey;
+  box-shadow: 3px 3px 10px lightgrey;
   padding: 30px;
 }
-
 .portfolio .portfolioBox__text {
   font-size: 0.8em;
   text-align: justify;
   padding-left: 20px;
   width: 80%;
 }
-
 .portfolio .portfolioBox__text h2 {
   line-height: 0em;
   margin-bottom: 3px;
 }
-
 .portfolio .portfolioBox__text h3 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   line-height: 1em;
   margin-right: 10px;
@@ -105,55 +99,45 @@ header h1 {
   padding: 3px;
   border-radius: 4px;
 }
-
 .portfolio .portfolioBox__text p {
   font-size: 0.9em;
 }
-
 .portfolio .portfolioBox__text img {
   width: 40px;
   margin-left: 15px;
 }
-
 .portfolio .container {
   position: relative;
   width: 50%;
 }
-
 .portfolio .container .image {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .portfolio .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff40;
+  background-color: rgba(255, 255, 255, 0.2509803922);
   overflow: hidden;
   width: 100%;
   height: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .portfolio .container:hover .overlay {
   height: 100%;
 }
-
 .portfolio .text {
   color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .portfolio .text img {
   width: 80px;
 }
@@ -163,16 +147,63 @@ footer {
   height: 150px;
   background-color: #E5E7E9;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 footer p {
   position: absolute;
   bottom: 0;
 }
-/*# sourceMappingURL=stylePortfolio.css.map */
+
+/**Smartphone et Tablettes**/
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  nav {
+    background-color: rgba(138, 155, 167, 0.6);
+  }
+  nav .mainPages {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(138, 155, 167, 0.6);
+    height: auto;
+    text-align: center;
+  }
+  nav .mainPages a {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  nav label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked + .mainPages {
+    display: flex;
+  }
+
+  header {
+    font-size: 0.4em;
+  }
+  header h1 {
+    padding-top: 20%;
+  }
+
+  .portfolioBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolioBox .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=stylePortfolio.css.map */
