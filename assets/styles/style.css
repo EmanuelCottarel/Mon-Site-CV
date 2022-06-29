@@ -192,7 +192,7 @@ header .arrow_down img:hover {
   color: #8a9ba7;
 }
 .competence .skill:nth-child(3) {
-  background-image: conic-gradient(#96b3c2 15%, transparent 0);
+  background-image: conic-gradient(#96b3c2 30%, transparent 0);
   color: #96b3c2;
 }
 .competence .content {
